@@ -15,9 +15,13 @@
 
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
-        vr-mode-ui="enabled: false"
+        vr-mode-ui="enabled: true"
 		embedded
-        arjs='sourceType: webcam; sourceWidth:1080; sourceHeight:1920; displayWidth: 1080; displayHeight: 1920; debugUIEnabled: false;'></a-scene>
+        arjs='sourceType: webcam; sourceWidth:1080; sourceHeight:1920; displayWidth: 1080; displayHeight: 1920; debugUIEnabled: false;'
+        gps-entity-place="latitude: -23.5440085; longitude: 46.6879381;"
+        gltf-model='./assets/person/person.gltf'
+        >
+    </a-scene>
         
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>

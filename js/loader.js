@@ -21,8 +21,8 @@ function findDynamicPlace(position) {
         {
             name: 'Pessoa',
             location: {
-                lat: -23.5440085,
-                lng: 46.6879381,
+                lat: position.coords.latitude,
+                lng: position.coords.longitude,
             }
         },
     ]);
@@ -48,5 +48,6 @@ function renderPlaces(places) {
         });
 
         scene.appendChild(model);
+        
     });
 }
