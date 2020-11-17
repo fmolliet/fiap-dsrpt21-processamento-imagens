@@ -15,7 +15,7 @@ function getLocation() {
 }
 
 function findDynamicPlace(position) {
-    console.log(position)
+    
     // Futura implementação chamada na API via AJAX com autenticação
     renderPlaces([
         {
@@ -40,8 +40,8 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/person/person.gltf');
         
         //model.setAttribute('rotation', '0 180 0');
-        //model.setAttribute('animation-mixer', '');
-        //model.setAttribute('scale', '0.5 0.5 0.5');
+        model.setAttribute('animation-mixer', '');
+        model.setAttribute('scale', '10 10 10');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
