@@ -21,8 +21,8 @@ function findDynamicPlace(position) {
         {
             name: 'Pessoa',
             location: {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude,
+                lat: -23.543993,
+                lng: 46.687975,
             }
         },
     ]);
@@ -37,7 +37,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('gltf-model', "https://cors-anywhere.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf");
+        model.setAttribute('gltf-model', './assets/person/person.gltf');
         
         //model.setAttribute('rotation', '0 180 0');
         //model.setAttribute('animation-mixer', '');
