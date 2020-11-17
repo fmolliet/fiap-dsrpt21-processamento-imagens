@@ -41,7 +41,7 @@ function renderPlaces(places) {
         
         //model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '10 10 10');
+        model.setAttribute('scale', '0.5 0.5 0.5');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
