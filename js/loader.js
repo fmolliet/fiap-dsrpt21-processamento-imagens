@@ -21,8 +21,8 @@ function findDynamicPlace(position) {
         {
             name: 'Pessoa',
             location: {
-                lat: -23.543993,
-                lng: 46.687975,
+                lat: -23.5440085,
+                lng: 46.6879381,
             }
         },
     ]);
